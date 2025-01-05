@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap Installation -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+
+  <!-- jQuery Installation -->
+  <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+
+
+  <title>DA WD</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+4:opsz@8..60&display=swap">
+  
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Source+Sans+Pro&display=swap">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="TL.css">
+    
+</head>
+
+<script>
+  $(window).on('load', function() {  
+    $(document).ready(function (){
+
+      $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight()+'px')
+
+      $(window).resize(function(){
+        $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight()+'px')
+      });
+    })
+  })
+</script>
+
+<body class="d-flex flex-column h-100">
+
+  <header class="header py-2 mb-1 fixed-top">
+    <div class="container-fluid d-grid gap-0 align-items-center" style="grid-template-columns: max-content max-content auto;">
+
+      <!-- Brand -->
+      <a href="da_wd.html" id="brand"><span onclick="location.href='da_wd.html'" title="to DA WD" class="navbar-brand">Victoria</span></a>
+      
+      <div id="SecondCol" class="d-flex align-items-center">
+
+        <!-- Card -->
+        <div class="btn-group dropend">
+          <ul class="abtList" style="list-style-type: none;">   
+            <li>Data Analyst & Web Developer</li>
+            <hr>
+            <li>Creating innovative, tailored approaches to deliver data-driven insights</li>
+          </ul>
+        </div>
+
+        <!-- Skills Dropdown -->
+        <a id="loginAlink" href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="fa-solid fa-screwdriver-wrench"></span>
+          <span class="login-dropdown fa fa-chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="r.html">R</a></li>
+          <li><a class="dropdown-item" href="sql.html">SQL</a></li>
+          <li><a class="dropdown-item" href="excel.html">Excel</a></li>
+          <li><a class="dropdown-item" href="python.html">Python</a></li>
+          <li><a class="dropdown-item" href="tableau.html">Tableau</a></li>
+          <li><a class="dropdown-item" href="vbamacro.html">VBA/Macro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="html_css_js.html">Web development</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="da_wd.html" style="text-decoration: underline;">Home</a></li>
+        </ul> 
+      </div>
+    </div>
+  </header>
+  
+  <main class="flex-shrink-0">
+
+    <div class="aboutBGimg"></div>
+
+    <div class="aboutBGcolor"></div>
+    
+    <div class="aboutList">
+
+      <h1>About me</h1>
+      <h2>A results-driven professional, I thrive on efficiency and process optimization.</h2>
+      <p>"What could make it more efficient?" is the question I ask myself throughout any process. 
+        It drew my attention to automation by means of Python, VBA and sparked my interest in data analytics.</p>
+      <p>Enrolled in a remote Data Analytics course with LSE, I'm ready to dive into a new project.</p>
+      <p>My ability to quickly gain expertise in new domains allows me to transform projects into high-quality, intelligent, and autonomous processes.</p>
+      <p>With 10 years of experience, including economic and financial reporting for the headquarters of a vertically integrated company and delivering academic research, 
+        I have consistently earned stakeholder recognition for my work.
+        I am known for my collaborative approach, strong self-learning capabilities, and advanced technical acumen, 
+        making me an asset to any team focused on achieving meaningful outcomes.</p>
+
+      <h1>About this portfolio</h1>
+      <h2>"... work speaks for itself ..." - Henry J. Kaiser</h2>
+      <p>The 'wrenches' drop down will lead you to demos by skills. 
+        Think of how your project could benefit from either or a combination of them. 
+        Connect with me on LinkedIn or shoot an email (also located in the bottom of each page).</p>
+
+      <h1>Data Analyst background</h1>
+      <h2>"... epic sleuthing ..." - LSE coursemate re my data analytics coursework</h2>
+      <p>Econometrics courses in my master's program and Python for data analytics course with Udemy got me interested in pursuing 
+        a full range of technical skills necessary for data analytics. 
+        I am now enrolled in a remote afterhours Data Analytics Career Accelerator with FourthRev and LSE. 
+        While practicing R, SQL, Excel, Python and Tableau on real world data, I'm attending statistics, AI and etc. masterclasses,
+        practicing insights' delivery to stakeholders, networking across industries.</p>
+
+      <h1>Web Developer background</h1>
+      <h2>"... organised, detail-oriented ..." - colleague re me building a new company function</h2>
+      <p>My main takeaway from lockdowns is this newly discovered hobby and side hustle. I enjoyed building a search engine by means of public API. 
+        It proved me a Udemy certified full-stack web developer with HTML, CSS, JavaScript, PHP and MySQL.</p>
+    </div>
+    
+    
+  </main>
+
+  <footer class="footer d-flex mt-auto py-3 justify-content-between align-items-center">
+    <div class="footer-container">
+      &copy; 2025 Victoria P.
+    </div>
+    <div class="contact">
+      <span>v.da.wb@outlook.com</span>
+      <a href="https://www.linkedin.com/in/vibp/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+<!-- 
+    TO DO::::::::::::::::::
+
+ - animate page loading https://www.w3schools.com/howto/howto_js_animate_icons.asp; https://www.w3schools.com/howto/howto_css_loader.asp
+ - vertically center footer icons in Safari https://www.w3schools.com/howto/howto_css_center_button.asp
+
+-->
