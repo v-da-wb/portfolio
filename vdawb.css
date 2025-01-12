@@ -20,7 +20,7 @@ a#brand {
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
   justify-content: left; 
-  font-size: 40px; 
+  font-size: 3vw; /* changes 12.01.2025 */
   font-family: "Knewave", serif;
   font-weight: 400;
   padding: 0 3.5%;
@@ -46,31 +46,6 @@ a#brand {
   background-color: #ddcc77;  
 }
 
-input:focus, 
-select:focus, 
-textarea:focus, 
-button:focus, 
-input.form-control:focus {
-  outline: none;
-  border: initial;
-  box-shadow: none;
-}
-/* retain search box background color */
-input#search_term:-webkit-autofill:not(.active) {
-  transition: background-color 500s;
-  -webkit-text-fill-color: #403D3C !important;
-  -webkit-background-clip:border-box !important; 
-}
-
-input#search_term {
-  font-family: 'Bodoni Moda', serif;
-  font-weight: 400;
-  padding: 7.5px 10px;
-  font-size: 0.9rem; 
-  border:#797D7F ;
-  background-color: #e0c194; 
-}
-
 span#wrench:hover, 
 a#skills:hover .skill-dropdown {
   color: #777777;
@@ -90,38 +65,6 @@ a#skills:hover .skill-dropdown {
   color: #ddaa33;
   font-size: 15px; 
   padding-left: 5px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-}
-
-/* The Close Button */
-span#close {
-  color: #626567;
-  float: right;
-  font-size: 20px;
-  max-width: min-content;
 }
 
 span#close:hover,
@@ -352,11 +295,11 @@ div.aboutBGimg {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: 0% 0%;
-  filter: blur(2px);
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
+  filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
   z-index:97;
 }
 
@@ -364,7 +307,7 @@ div.aboutBGcolor {
   position: absolute;
   left:   5%;
   right:  5%;
-  top:    130px;
+  top:    12vw;
   bottom: 60px;
   padding: 0;
   margin-bottom: 40px;
@@ -382,14 +325,14 @@ div.aboutList {
   font-family: "Oswald", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  text-align: justify;
+  
   text-justify: inter-word;
   position:relative;
   left:   5%;
   right:  5%;
-  top:    150px;
+  top:    15vw;
   bottom: 80px;
-  padding: 0 7% 5em 7% ;
+  padding: 0 7% 7em 7% ;
   border: 0.5em solid transparent; /* for heightResize */
   width: 85%;
   z-index: 99;
@@ -433,9 +376,10 @@ div.aboutList h1 {
   color: #721E17;
   font-size: large;
   font-weight: 450;
-  padding: 0;
+  padding: 0 0 2px 0;
   margin: 0;
   overflow-wrap: break-word;
+  text-align: justify; /*changes 12.01.2025*/
 }
 
 .more_chevron, .hide_chevron {
@@ -457,8 +401,8 @@ footer {
   bottom: 0;
   background-image: linear-gradient(to bottom, #1d2440 10%, #cc3311 90%);
   width: 100%;
-  padding: 0 3.5%;
-  margin-top: 3.5%; 
+  padding: 0 7%; /* changes 12.01.2025 */
+  margin-top: 3%; /* changes 12.01.2025 */
   font-family: "Oswald", serif;
   font-optical-sizing: auto;
   font-style: normal;
