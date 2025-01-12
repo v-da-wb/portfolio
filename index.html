@@ -43,6 +43,9 @@
 <script>
   $(window).on('load', function() {  
     $(document).ready(function (){
+
+      setTimeout(function(){$('#slider').css({'animation-name': 'color', 'animation-duration': '1s'})}, 1000);
+      setTimeout(function(){$('#slider').addClass('color')}, 2000);
       
       $('.expand1').css('height', $('.expand1').children('div:first').height())
       $('.expand2').css('height', $('.expand2').children('div:first').height())
@@ -99,6 +102,11 @@
     
     <div class="aboutList">
 
+      <!-- Slider -->
+      <div id="slider" class="slide"><h1>R SQL Excel Python Tableau VBA Macro 
+        <br>HTML CSS JavaScript jQuery PHP MySQL API
+      </h1></div>
+
       <!-- About this portfolio -->
       <h1>"... work speaks for itself ..." - Henry J. Kaiser.</h1>
       <p class = "p_text">Check out demos of my technical skills via the 'wrenches' drop down. 
@@ -111,10 +119,10 @@
       <div class="expand1">
         <div>
           <h1 style="display: inline;">A results-driven professional, I thrive on efficiency and process optimization.</h1>
-          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">(more)</i></span>
+          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">more</i></span>
         </div>
         <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;">
-          <i id="hide_text">(hide)</i>
+          <i id="hide_text">hide</i>
         </span>
         <div class = "dheight">
           <p class = "p_text">"What could make it more efficient?" is the question I ask myself throughout any process. 
@@ -132,9 +140,9 @@
       <div class="expand2">
         <div>
           <h1 style="display: inline;">Data Analyst: "... epic sleuthing ..." - coursemate, about my data analytics coursework.</h1>
-          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">(more)</i></span>
+          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">more</i></span>
         </div>
-        <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;"><i id="hide_text">(hide)</i></span>
+        <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;"><i id="hide_text">hide</i></span>
         <div class = "dheight">
           <p class = "p_text">Econometrics courses in my master's program and Python for data analytics course with Udemy got me interested in pursuing 
             a full range of technical skills necessary for data analytics. 
@@ -148,12 +156,12 @@
       <div class="expand3">
         <div>
           <h1 style="display: inline;">Web Developer: "... organised, detail-oriented ..." - colleague, about my work attitude when building a new company function.</h1>
-          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">(more)</i></span>
+          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">more</i></span>
         </div>
-        <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;"><i id="hide_text">(hide)</i></span>
+        <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;"><i id="hide_text">hide</i></span>
         <div class = "dheight">
           <p class = "p_text">My main takeaway from lockdowns is this newly discovered hobby and side hustle. I enjoyed building a search engine by means of public API. 
-          <br>It proved me a Udemy certified full-stack web developer with HTML, CSS, JavaScript, PHP and MySQL.</p>
+          <br>It proved me a Udemy certified full-stack web developer with HTML, CSS, JavaScript, jQuery, PHP, MySQL, API.</p>
         </div>
       </div>
     </div>
