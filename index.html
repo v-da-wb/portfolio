@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" type="text/css" href="vdawb.css">
+  <link rel="stylesheet" type="text/css" href="file:///C:/Users/victo/OneDrive/Documents/Portfolio_OneDrive/vdawb.css">
     
 </head>
 
@@ -44,14 +44,14 @@
   $(window).on('load', function() {  
     $(document).ready(function (){
       
-      $('.expand1').css('max-height', $('.expand1').children('div:first').height())
+      $('.expand1').css('height', $('.expand1').children('div:first').height())
       $('.expand2').css('max-height', $('.expand2').children('div:first').height())
       $('.expand3').css('max-height', $('.expand3').children('div:first').height())
       $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight())
     })
 
     $(window).resize(function(){
-        $('.expand1').css('max-height', $('.expand1').children('div:first').height())
+        $('.expand1').css('height', $('.expand1').children('div:first').height())
         $('.expand2').css('max-height', $('.expand2').children('div:first').height())
         $('.expand3').css('max-height', $('.expand3').children('div:first').height())
         $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight())
@@ -197,12 +197,3 @@
 
 </body>
 </html>
-
-
-<!-- 
-    TO DO::::::::::::::::::
-
- - animate page loading https://www.w3schools.com/howto/howto_js_animate_icons.asp; https://www.w3schools.com/howto/howto_css_loader.asp
- - vertically center footer icons in Safari https://www.w3schools.com/howto/howto_css_center_button.asp
-
--->
