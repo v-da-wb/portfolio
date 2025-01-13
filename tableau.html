@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap Installation -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+
+  <!-- jQuery Installation -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  <title>Victoria+Tableau</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+4:opsz@8..60&display=swap">
+  
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="vdawb.css">
+    
+</head>
+
+<script>
+  $(window).on('load', function() {  
+    $(document).ready(function (){
+      
+      $('.expand1').css('height', $('.expand1').children('div:first').height())
+      // $('.expand2').css('max-height', $('.expand2').children('div:first').height())
+      // $('.expand3').css('max-height', $('.expand3').children('div:first').height())
+      $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight())
+    })
+
+    $(window).resize(function(){
+        $('.expand1').css('height', $('.expand1').children('div:first').height())
+        // $('.expand2').css('max-height', $('.expand2').children('div:first').height())
+        // $('.expand3').css('max-height', $('.expand3').children('div:first').height())
+        $('.aboutBGcolor').css('min-height', $('.aboutList').outerHeight())
+    })
+  });
+</script>
+
+<body class="d-flex flex-column h-100">
+
+  <header class="header d-flex mt-auto py-2 mb-1 fixed-top justify-content-between align-items-center">
+    <!-- Brand -->
+    <a href="index.html" id="brand"><span onclick="location.href='index.html'" title="to home page">Victoria</span></a>
+
+    <!-- BCard -->
+    <div class="business-card">
+      <h1>Data Analyst & Web Developer</h1>
+      <hr>
+      <h2>Creating innovative, tailored approaches to deliver data-driven insights</h2>
+    </div>
+
+    <!-- Skills Dropdown -->
+    <a id="skills" href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      <span id=wrench class="fa-solid fa-screwdriver-wrench"></span>
+      <span class="skill-dropdown fa fa-chevron-down"></span>
+    </a>
+    <ul class="dropdown-menu text-small shadow">
+      <li><a class="dropdown-item" href="r.html">R</a></li>
+      <li><a class="dropdown-item" href="sql.html">SQL</a></li>
+      <li><a class="dropdown-item" href="excel.html">Excel</a></li>
+      <li><a class="dropdown-item" href="python.html">Python</a></li>
+      <li><a class="dropdown-item" href="tableau.html" style="text-decoration: underline;">Tableau</a></li>
+      <li><a class="dropdown-item" href="vbamacro.html">VBA/Macro</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="wb.html">Web development</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="index.html">Home</a></li>
+    </ul> 
+  </header>
+  
+  <main class="flex-shrink-0">
+
+    <div class="aboutBGimg"></div>
+
+    <div class="aboutBGcolor"></div>
+    
+    <div class="aboutList">
+
+      <!-- Resume -->
+      <h1>Content coming soon!</h1>
+      <p class = "p_text">Thank you for stopping by! 
+        The webpage is in progess, come back in a jiffy &#128540
+      </p>
+      <!--<p class = "p_text">Market data was cleaned, processed, analysed and databases created in SQL.</p>
+
+     
+      <div class="expand1">
+        <div>
+          <h1 style="display: inline;">Corresponding GitHub files:</h1>
+          <span class="fa fa-chevron-down more_chevron" style="display: inline-block;"><i id="more_text">more</i></span>
+        </div>
+        <span class="fa fa-chevron-up hide_chevron" style="display: inline; visibility: hidden;">
+          <i id="hide_text">hide</i>
+        </span>
+        <div class = "dheight">
+          <p>In the GitHub <a id = "in_link" href="https://github.com/v-da-wb/portfolio">folder</a> see:</p>
+          <ul class="p_text">
+            <li>...</li>
+            <li>... <a id = "in_link" href="tableau.html">Tableau Public</a>.</li>
+          </ul>
+        </div>
+      </div>-->
+      
+    </div>
+  </main>
+
+  <footer class="footer d-flex mt-auto py-3 justify-content-between align-items-center">
+    <div class="year_name">
+      &copy; 2025 Victoria P.
+    </div>
+    <div class = "contact d-flex mt-auto py-2">
+      <div id = "email">v.da.wb@outlook.com</div>
+      <div><a href="https://www.linkedin.com/in/vibp/"><i class="fa-brands fa-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <script>
+    $('.more_chevron').on('click', function(){
+      
+      var h = $(this).parent().outerHeight() 
+              + $(this).parent().siblings('div').outerHeight()
+              + $(this).parent().siblings('span').outerHeight()
+      $(this).parent().parent().animate({'min-height' : h}, 450)
+      $(this).hide().parent().siblings('.hide_chevron').css('visibility', 'visible').show()
+
+      var hb = $('.aboutList').outerHeight()
+      $('.aboutBGcolor').animate({'min-height': hb + h}, 400)
+    });
+  
+    $('.hide_chevron').on('click', function(){
+      $(this).parent().css('min-height', $(this).siblings('div:first').height())
+      $(this).parent().animate({'height': $(this).siblings('div:first').height()}, 250)
+      $(this).hide().siblings('div:first').children('span').show()
+      $('.aboutBGcolor').animate({'min-height': $('.aboutList').outerHeight()+20}, 450)
+    
+    });
+    
+    ; // end expandShrink: https://jsfiddle.net/eyazcL6d/
+  
+  </script>
+
+
+</body>
+</html>
+
+
+<!-- 
+    TO DO::::::::::::::::::
+
+ - animate page loading https://www.w3schools.com/howto/howto_js_animate_icons.asp; https://www.w3schools.com/howto/howto_css_loader.asp
+ - vertically center footer icons in Safari https://www.w3schools.com/howto/howto_css_center_button.asp
+
+-->
