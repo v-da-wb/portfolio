@@ -100,14 +100,46 @@
     <div class="aboutList">
 
       <!-- Resume -->
+      <h1>NHS General Practices’ utilisation and capacity (2020 - mid 2022)</h1>
+      <p class = "p_text">The National Health Services (NHS) – England is reassessing healthcare General Practice 
+        services’ development to meet growing population demand. For correct budget allocation it requested analysis
+         of current services’ utilisation and capacity.</p>
+      <p class = "p_text">It is achievable through the comparison of services’ actual capacity vs established 
+        monthly standard, identification of utilisation patterns, specifically establishment of busiest periods, 
+        as well as reasons for missed appointments, their connection with the time till appointment and whether it
+         is in person or remote.</p>
+      <p class = "p_text">The analysis was complicated by the structure of the relational datasets and numerous data 
+        entry related constraints. The data exploration stage revealed that one of the 3 data sets had daily values 
+        inconsistent with other datasets. It thus limited the insight into what caused 24% (over 40 million) of 
+        appointments of unknown duration. These appointments could equally last from 0 to over 60 minutes. </p>
+      <p class = "p_text">Analysis identified over 8 million missed appointments accounting for over £240 millions 
+        pounds of NHS England’s half 2022-year budget. The average appointment cost of £30 was obtained from NHS 
+        England open-source information. Further time-series analysis shows that the longer the time till 
+        appointment the least attended it is.</p>
+      <p class = "p_text">Mondays and Tuesdays were found to be the busiest weekdays. According to NHS England 
+        scheduling weekend appointments is rather complicated which could potentially be the reason for demand 
+        tilt towards beginning of the week. Highest annual numbers with overcapacity utilisation are in Autumn, 
+        with end of November 2021 during half term being the busiest period. Average monthly capacity of 30 million
+         appointments across all 7 regions is based on NHS Digital source. Given appointments were mainly offered 
+         either same day or in 2-14 days, could scheduling them in 1 day instead of 2-14 even 
+         out the monthly utilisation?</p>
+      <p class = "p_text">COVID period showed an inevitable switch from face-to-face appointments to telephone 
+        appointments. Due to datasets covering different timeframe it was not possible to see whether those 
+        appointments belonged to the national category that must be seen the same day. If that was the case that
+        insight could suggest exploring further opportunities of budget optimisation by means of increased ratio
+        of telephone vs face-to-face appointments when appropriate (based on NHS guidance).</p>
+      <p class = "p_text">Summing up corresponding recommendations based on the listed findings were generated 
+        upon the analysis and are mainly aiming increased quality of data entry and optimisation of current 
+        utilisation patterns.</p>
+      
+
       <h1>Financial data analysis with Python for an investment firm (gold and oil portfolio diversification)</h1>
       <p class = "p_text">An investment firm A is specialising in financial data analytics for businesses.
         It requested analysis of investment options (gold, oil) to determine which of them is the most stable entity to invest in.
       </p>
       <p class = "p_text">Stocks prices data was imported, explored and descriptive statistics 
       was calculated for a sliced sample in Jupyter with Python. It also demonstrates how a Jupyter
-      file content can be outlined with HTML.
-      <br>More content to be added soon.</p>
+      file content can be outlined with HTML.</p>
      
       <div class="expand1">
         <div>
@@ -120,6 +152,7 @@
         <div class = "dheight">
           <p>In the GitHub <a id = "in_link" href="https://github.com/v-da-wb/portfolio/tree/main/Python">folder</a> see:</p>
           <ul class="p_text">
+            <li>NHS_Jupyter_Notebook.ipynb</li>
             <li>Jupyter_Python_oil_gold_investment_diversification.ipynb</li>
           </ul>
         </div>
