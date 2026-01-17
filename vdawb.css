@@ -279,7 +279,8 @@ div.aboutList {
 }
 
 .imageRow img {
-  width: 180px;       /* explicit, predictable size */
+  width: 25%;       /* explicit, predictable size */
+  max-width: 360px;
   height: auto;       /* preserve aspect ratio */
   object-fit: cover;           /* ensures images fill the box while maintaining aspect ratio (cropped if needed) */
   /* aspect-ratio: 4 / 2;         maintain consistent height even for different image shapes */
