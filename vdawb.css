@@ -286,6 +286,14 @@ div.aboutList {
   /* aspect-ratio: 4 / 2;         maintain consistent height even for different image shapes */
 }
 
+@media (max-width: 600px) {
+  .imageRow img {
+    width: 70vw;
+    min-width: 200px;
+    max-width: 260px;
+  }
+}
+
 #in_link, #e_link {
   text-decoration: underline;
   color:#721E17;
